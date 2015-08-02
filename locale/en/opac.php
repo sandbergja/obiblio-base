@@ -38,11 +38,11 @@
 #****************************************************************************
 #*  Translation text for page index.php
 #****************************************************************************
-$trans["opac_Header"]        = "\$text='Online Public Access Catalog (OPAC)';";
+$trans["opac_Header"]        = "\$text='Library catalog';";
 $trans["opac_WelcomeMsg"]    = "\$text=
-  'Welcome to our library\'s online public access catalog.  Search our catalog
-   to view bibliography information on holdings we have in our library.';";
-$trans["opac_SearchTitle"]   = "\$text='Search Bibliography by Search Phrase:';";
+  'Welcome to the catalog, where you can find information on all of the
+  library's materials.';";
+$trans["opac_SearchTitle"]   = "\$text='Search books and other materials:';";
 $trans["opac_Keyword"]       = "\$text='Keyword';";
 $trans["opac_Title"]         = "\$text='Title';";
 $trans["opac_Author"]        = "\$text='Author';";
