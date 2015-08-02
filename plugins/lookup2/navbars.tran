@@ -1,0 +1,8 @@
+<?php
+#****************************************************************************
+#*  Translation text for page lookup.php for lookup2
+#****************************************************************************
+$trans["lookup"]                = "\$text = 'Copy cataloging';";
+$trans["lookup_opts"]       		= "\$text = 'Copy cataloging options';";
+$trans["lookup_hosts"]       		= "\$text = 'Copy cataloging sources';";
+?>
