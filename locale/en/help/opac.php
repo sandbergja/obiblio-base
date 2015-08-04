@@ -3,6 +3,6 @@
 Help Sub Sections:
 <ul>
   <li><a href="#sec1"><font class="error">This help system is still under construction.</font></a></li>
-  <li><a href="#sec2"><font class="error"><Nothing To See Here!></font></a></li>
+  <li><a href="#sec2"><center>For an additional search tips press HERE</center>></font></a></li>
 </ul>
 <br><br>
