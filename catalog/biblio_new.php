@@ -35,8 +35,7 @@ if (!isset($_REQUEST['posted'])) {
       $msg = $loc->getText("biblioNewSuccess");
 #**************************************************************************
   //------following line auto transfers to new copy form (new function)
-  header("Location:
-../catalog/biblio_copy_new_form.php?bibid=".$bibid."&msg=".$msg);
+  header("Location:../catalog/biblio_copy_new_form.php?bibid=".$bibid."&msg=".$msg);
   exit();
   #**************************************************************************
     }
