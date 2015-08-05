@@ -4,6 +4,7 @@ Help Sub Sections:
 <ul>
   <li><a href="#sec1"><font class="error">This help system is still under construction.</font></a></li>
   <li><a href="#sec2"><hr>
+  </ul>
 <center>
 <h2><font color="blue">Keyword Searches</h2>
 <table border="2">
@@ -29,5 +30,4 @@ Help Sub Sections:
 <td>Any number matching the call number.</td>
 </tr>
 </center>
-</ul>
 <br><br>
