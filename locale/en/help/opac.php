@@ -6,7 +6,7 @@ Help Sub Sections:
   <li><a href="#sec2"><hr>
   </ul>
 <center>
-<h2><font color="blue">Keyword Searches</h2>
+<h2><font color="blue">Keyword Searches</font></h2>
 <table border="2">
 <tbody>
 <tr>
