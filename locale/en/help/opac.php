@@ -1,10 +1,6 @@
 <h1>Online Public Access Catalog (OPAC) Help Page:</h1>
 <br><br>
-Help Sub Sections:
-<ul>
-  <li><a href="#sec1"><font class="error">This help system is still under construction.</font></a></li>
-  <li><a href="#sec2"><hr>
-  </ul>
+This help system is still under construction.
 <center>
 <h2><font color="blue">Keyword Searches</font></h2>
 <table border="2">
