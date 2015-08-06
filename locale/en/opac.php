@@ -41,7 +41,7 @@
 $trans["opac_Header"]        = "\$text='Library catalog';";
 $trans["opac_WelcomeMsg"]    = "\$text=
   'Welcome to the catalog, where you can find information on all of the
-  library's materials.';";
+  library\'s materials.';";
 $trans["opac_SearchTitle"]   = "\$text='Search books and other materials:';";
 $trans["opac_Keyword"]       = "\$text='Keyword';";
 $trans["opac_Title"]         = "\$text='Title';";
