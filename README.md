@@ -22,7 +22,7 @@ Finally, [xelite25](https://github.com/xelite25), a work study student at LBCC, 
 
 ##How to install this on a Linux server
 
-The only file missing from this repository is (https://bitbucket.org/mstetson/obiblio/src/babf99e9469d7f0be0eaff11cbadf92badb0a6f3/database_constants.php)[database_constants.php].  The only additional file is the database file (https://github.com/sandbergja/obiblio-base/blob/master/obiblio-base.sql)[obiblio-base.sql].
+The only file missing from this repository is [database_constants.php](https://bitbucket.org/mstetson/obiblio/src/babf99e9469d7f0be0eaff11cbadf92badb0a6f3/database_constants.php).  The only additional file is the database file [obiblio-base.sql](https://github.com/sandbergja/obiblio-base/blob/master/obiblio-base.sql).
 
 To install obiblio-base on a server:
 1. Type `git clone https://github.com/sandbergja/obiblio-base.git` on the command line.
