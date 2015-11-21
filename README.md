@@ -11,7 +11,7 @@ I had previously used Openbiblio for the Library at [Tap In Leadership Academy](
 ##Modifications to a stock OpenBiblio Installation
 Openbiblio 0.7.2 does not have all the features required by the ELA library, which meant that I needed to incorporate some customizations built by myself and others in the OpenBiblio community.
 
-The library needs to retrieve book data via ISBN to save time during the cataloging process.  Fred LaPlante offers a very nice [lookup2](http://sourceforge.net/p/obiblio/patches/65/) patch that allows us to do this.  While by default, it uses the Library of Congress SRU server to collect data, we found that the CUNY SRU server included more of the books that are included in the ELA library.
+The library needs to retrieve book data via ISBN to save time during the cataloging process.  Fred LaPlante offers a very nice [lookup2](http://sourceforge.net/p/obiblio/patches/65/) patch that allows us to do this.  While by default, it uses the Library of Congress SRU server to collect data, we found that the CUNY SRU server included more of the books that are included in the ELA library.  It is worth noting that LC and CUNY use different schemata, and the [lookup patch only allows the use of one schema](https://bitbucket.org/mstetson/obiblio-10-wip/issues/23/lookup-must-allow-hosts-to-use-other-sru) at a time.  This makes switching between CUNY records and LC records a bit of a pain.
 
 To make the lookup2 patch a bit more user-friendly, I also applied [Wolfram Sang's patch](http://sourceforge.net/p/obiblio/patches/87/) that simplifies the lookup2 interface.
 
