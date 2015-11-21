@@ -2,8 +2,9 @@
 A simple installation of OpenBiblio with a few basic customizations
 
 ##Background
-In Summer 2015, Lynne Jenne began working with the LBCC Library to identify 
+In Summer 2015, Lynne Jenne began working with the LBCC Library to identify a simple, easy-to-use library system that supports barcode copy cataloging and circulation tasks.  It also has to be used without intervention from anybody other than the library users.
 
+I had previously used Openbiblio
 
 ##About obiblio
 Based on http://obiblio.sourceforge.net/
@@ -13,7 +14,7 @@ Based on http://obiblio.sourceforge.net/
 ##Differences from stock openbiblio
 Includes Fred LaPlante's lookup2 patch
 
-
+xelite25 contributed some helpful documentation
 
 
 ##How to install this on a Linux server
