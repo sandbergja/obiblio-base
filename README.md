@@ -25,11 +25,20 @@ I had previously developed a [very small patch](https://github.com/tapinacademy/
 
 ##How to install this on a Linux server
 
-Change file with db credentials
+The only file missing from this repository is (https://bitbucket.org/mstetson/obiblio/src/babf99e9469d7f0be0eaff11cbadf92badb0a6f3/database_constants.php)[database_constants.php].  The only additional file is the database file (https://github.com/sandbergja/obiblio-base/blob/master/obiblio-base.sql)[obiblio-base.sql].
 
-Cron job: I also configured the check-in process so that all materials that are
+To install obiblio-base on a server:
+# Type `git clone https://github.com/sandbergja/obiblio-base.git` on the command line.
+# `cd obiblio-base`
+# Open mysql on the command line.
+# Type `CREATE DATABASE db_name` where db_name is the name you'd like to call your database.
+# Type `SOURCE obiblio-base.sql`
+# Close mysql by pressing `^D`
+# Create a database_constants.php file
+
+As an extra modification, I created a cron job so that all materials that are
 "on the shelving cart" are moved back to the shelves automatically at
-midnight daily.  This way, we won't have any items languishing on the
+midnight daily.  This way, the ELA  library won't have any items languishing on the
 shelving cart after being checked in.
 
 ##Further steps in this project
