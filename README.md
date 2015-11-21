@@ -18,7 +18,7 @@ Openbiblio does not have all the features required by the ELA library.
 
 The library needs to retrieve book data via ISBN.  Therefore, I included Fred LaPlante's lookup2 patch.
 
-I had previously developed a very small patch to include a cover image in catalog images.
+I had previously developed a [very small patch](https://github.com/tapinacademy/obiblio-covers) to include a cover image in catalog images.
 
 xelite25 contributed some helpful documentation, which was missing from the original.
 
