@@ -12,11 +12,13 @@ Based on http://obiblio.sourceforge.net/
 
 
 ##Differences from stock openbiblio
-Includes Fred LaPlante's lookup2 patch
+Openbiblio does not have all the features required by the ELA library.
 
-Includes a cover image fetch patch
+The library needs to retrieve book data via ISBN.  Therefore, I included Fred LaPlante's lookup2 patch.
 
-xelite25 contributed some helpful documentation
+I had previously developed a very small patch to include a cover image in catalog images.
+
+xelite25 contributed some helpful documentation, which was missing from the original.
 
 
 ##How to install this on a Linux server
@@ -27,3 +29,6 @@ Cron job: I also configured the check-in process so that all materials that are
 "on the shelving cart" are moved back to the shelves automatically at
 midnight daily.  This way, we won't have any items languishing on the
 shelving cart after being checked in.
+
+##Further steps in this project
+Version 1.0 of openbiblio is available as a beta.  While it looks very nice, it still has some issues that I'd like to see resolved before moving to the new version.
