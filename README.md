@@ -4,7 +4,9 @@ A simple installation of OpenBiblio with a few basic customizations
 ##Background
 In Summer 2015, Lynne Jenne began working with the LBCC Library to identify a simple, easy-to-use library system that supports barcode copy cataloging and circulation tasks.  It also has to be used without intervention from anybody other than the library users.
 
-I had previously used Openbiblio for another library project (http://wiki.tapinacademy.org/index.php?title=Category:Library), and was familiar with its installation process and community.
+There are a number of apps and web services that would allow this.  We evaluated a number of these, but the large size of the ELA library placed it out of the free usage tier.  A subscription fee is not feasible for the ELA library at this time.
+
+I had previously used Openbiblio for the Library at [Tap In Leadership Academy](http://wiki.tapinacademy.org/index.php?title=Category:Library) in Champaign, Illinois.  This experience gave me some familiarity with its installation process and community.  It is much simpler to use and administer than the Evergreen system used by the LBCC library.
 
 ##About obiblio
 Based on http://obiblio.sourceforge.net/
