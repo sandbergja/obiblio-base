@@ -46,3 +46,5 @@ shelving cart after being checked in.  I accomplished this with the following on
 
 ##Further steps in this project
 Version 1.0 of openbiblio is available as a beta.  While it looks very nice, it still has some issues that I'd like to see resolved before moving to the new version.
+
+However, OpenBiblio 0.7.2 has not seen any major updates for over a year.  since I am running the ELA catalog with PHP 5.6, a lot of its code relies on deprecated functions, and I am having to suppress more warnings than I would like.  I am planning to keep an eye on the list of unresolved issues and possibly upgrade OpenBiblio during Summer 2016.
