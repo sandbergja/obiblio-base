@@ -20,7 +20,7 @@ The library needs to retrieve book data via ISBN.  Therefore, I included Fred La
 
 I had previously developed a [very small patch](https://github.com/tapinacademy/obiblio-covers) to include a cover image in catalog images.
 
-xelite25 contributed some helpful documentation, which was missing from the original.
+[xelite25](https://github.com/xelite25), a work study student at LBCC, contributed some helpful documentation.  This documentation was almost entirely missing from the original.
 
 
 ##How to install this on a Linux server
