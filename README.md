@@ -9,7 +9,7 @@ There are a number of apps and web services that would allow this.  We evaluated
 I had previously used Openbiblio for the Library at [Tap In Leadership Academy](http://wiki.tapinacademy.org/index.php?title=Category:Library) in Champaign, Illinois.  This experience gave me some familiarity with its installation process and community.  It is much simpler to use and administer than the Evergreen system used by the LBCC library.  I felt confident recommending this piece of software for use in the ELA library.
 
 ##Modifications to a stock OpenBiblio Installation
-Openbiblio does not have all the features required by the ELA library, which meant that I needed to incorporate some customizations built by myself and others in the OpenBiblio community.
+Openbiblio 0.7.2 does not have all the features required by the ELA library, which meant that I needed to incorporate some customizations built by myself and others in the OpenBiblio community.
 
 The library needs to retrieve book data via ISBN to save time during the cataloging process.  Fred LaPlante offers a very nice [lookup2](http://sourceforge.net/p/obiblio/patches/65/) patch that allows us to do this.  While by default, it uses the Library of Congress SRU server to collect data, we found that the CUNY SRU server included more of the books that are included in the ELA library.
 
