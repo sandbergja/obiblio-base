@@ -16,7 +16,7 @@ Based on http://obiblio.sourceforge.net/
 ##Differences from stock openbiblio
 Openbiblio does not have all the features required by the ELA library.
 
-The library needs to retrieve book data via ISBN.  Therefore, I included Fred LaPlante's lookup2 patch.
+The library needs to retrieve book data via ISBN.  Therefore, I included Fred LaPlante's [lookup2](http://sourceforge.net/p/obiblio/patches/65/) patch.
 
 I had previously developed a [very small patch](https://github.com/tapinacademy/obiblio-covers) to include a cover image in catalog images.
 
