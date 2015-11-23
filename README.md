@@ -22,6 +22,8 @@ Finally, [xelite25](https://github.com/xelite25), a work study student at LBCC, 
 
 ##How to install this on a Linux server
 
+I made this cut of Openbiblio easy for me to install and update, in case other folks on campus were interested in similar setups.
+
 The only file missing from this repository is [database_constants.php](https://bitbucket.org/mstetson/obiblio/src/babf99e9469d7f0be0eaff11cbadf92badb0a6f3/database_constants.php).  The only additional file -- which you can delete after installation -- is the database file [obiblio-base.sql](https://github.com/sandbergja/obiblio-base/blob/master/obiblio-base.sql).
 
 To install obiblio-base on a Linux server (assuming MySQL runs on localhost):
