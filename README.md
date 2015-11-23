@@ -2,11 +2,11 @@
 A simple installation of OpenBiblio with a few basic customizations
 
 ##Background
-In Summer 2015, Lynne Jenne began working with the LBCC Library to identify a simple, easy-to-use library system that supports barcode copy cataloging and circulation tasks.  It also has to be used without intervention from anybody other than the library users.
+In Summer 2015, Lynne Jenne began working with the LBCC Library to identify a simple, easy-to-use library system for use in the ELA library.  The system needed to support copy cataloging by ISBN and circulation tasks by barcode.  Since the Library is unstaffed, the system also needed to be usable with a minimal level of intervention.
 
 There are a number of apps and web services that would allow this.  We evaluated a number of these, but the large size of the ELA library placed it out of the free usage tier.  A subscription fee is not feasible for the ELA library at this time.
 
-I had previously used Openbiblio for the Library at [Tap In Leadership Academy](http://wiki.tapinacademy.org/index.php?title=Category:Library) in Champaign, Illinois.  This experience gave me some familiarity with its installation process and community.  It is much simpler to use and administer than the Evergreen system used by the LBCC library.  I felt confident recommending this piece of software for use in the ELA library.
+I had previously used Openbiblio -- an open source integrated library system -- for the Library at [Tap In Leadership Academy](http://wiki.tapinacademy.org/index.php?title=Category:Library) in Champaign, Illinois.  This experience gave me some familiarity with its installation process and community.  It is much simpler to use and administer than the Evergreen system used by the LBCC library, but it contains most of the features that Lynne sought.  I felt confident recommending this piece of software for use in the ELA library and setting aside a small portion of my time to getting it installed and making a few modifications.
 
 ##Modifications to a stock OpenBiblio Installation
 Openbiblio 0.7.2 does not have all the features required by the ELA library, which meant that I needed to incorporate some customizations built by myself and others in the OpenBiblio community.
@@ -22,9 +22,9 @@ Finally, [xelite25](https://github.com/xelite25), a work study student at LBCC, 
 
 ##How to install this on a Linux server
 
-The only file missing from this repository is [database_constants.php](https://bitbucket.org/mstetson/obiblio/src/babf99e9469d7f0be0eaff11cbadf92badb0a6f3/database_constants.php).  The only additional file is the database file [obiblio-base.sql](https://github.com/sandbergja/obiblio-base/blob/master/obiblio-base.sql).
+The only file missing from this repository is [database_constants.php](https://bitbucket.org/mstetson/obiblio/src/babf99e9469d7f0be0eaff11cbadf92badb0a6f3/database_constants.php).  The only additional file -- which you can delete after installation -- is the database file [obiblio-base.sql](https://github.com/sandbergja/obiblio-base/blob/master/obiblio-base.sql).
 
-To install obiblio-base on a server:
+To install obiblio-base on a Linux server (assuming MySQL runs on localhost):
 1. Type `git clone https://github.com/sandbergja/obiblio-base.git` on the command line.
 
 2. `cd obiblio-base`
