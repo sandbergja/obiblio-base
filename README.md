@@ -2,22 +2,26 @@
 A simple installation of OpenBiblio with a few basic customizations
 
 ##Background
-In Summer 2015, Lynne Jenne began working with the LBCC Library to identify a simple, easy-to-use library system for use in the ELA library.  The system needed to support copy cataloging by ISBN and circulation tasks by barcode.  Since the Library is unstaffed, the system also needed to be usable with a minimal level of intervention.
+In Summer 2015, Lynne Jenne consulted with the LBCC Library to identify a simple, easy-to-use library system for use in the ELA library.  The system needed to support copy cataloging by ISBN and circulation tasks by barcode.  Since the Library is unstaffed, the system needed to be usable with a minimal level of intervention.
 
-There are a number of apps and web services that would allow this.  We evaluated a number of these, but the large size of the ELA library placed it out of the free usage tier.  A subscription fee is not feasible for the ELA library at this time.
+There are a number of apps and web services that would meet these basic needs.  We evaluated a number of these, but the large size of the ELA library placed it out of the products' free usage tiers.  A subscription fee is not feasible for the ELA library at this time.
 
-I had previously used Openbiblio -- an open source integrated library system -- for the Library at [Tap In Leadership Academy](http://wiki.tapinacademy.org/index.php?title=Category:Library) in Champaign, Illinois.  This experience gave me some familiarity with its installation process and community.  It is much simpler to use and administer than the Evergreen system used by the LBCC library, but it contains most of the features that Lynne sought.  I felt confident recommending this piece of software for use in the ELA library and setting aside a small portion of my time to getting it installed and making a few modifications.
+I had previously used Openbiblio -- an open source integrated library system -- for the Library at [Tap In Leadership Academy](http://wiki.tapinacademy.org/index.php?title=Category:Library) in Champaign, Illinois.  This experience gave me some familiarity with its installation process and community.  It is much simpler to use and administer than the Evergreen system used by the LBCC library, but it contains most of the features that Lynne sought.  I felt confident recommending this piece of software for use in the ELA library and setting aside a small portion of my time to install and customize it.
 
 ##Modifications to a stock OpenBiblio Installation
-Openbiblio 0.7.2 does not have all the features required by the ELA library, which meant that I needed to incorporate some customizations built by myself and others in the OpenBiblio community.
+Openbiblio 0.7.2 has most -- but not all -- of the features required by the ELA library, which meant that I needed to incorporate some customizations built by myself and others in the OpenBiblio community.
 
-The library needs to retrieve book data via ISBN to save time during the cataloging process.  Fred LaPlante offers a very nice [lookup2](http://sourceforge.net/p/obiblio/patches/65/) patch that allows us to do this.  While by default, it uses the Library of Congress SRU server to collect data, we found that the CUNY SRU server included more of the books that are included in the ELA library.  It is worth noting that LC and CUNY use different schemata, and the [lookup patch only allows the use of one schema](https://bitbucket.org/mstetson/obiblio-10-wip/issues/23/lookup-must-allow-hosts-to-use-other-sru) at a time.  This makes switching between CUNY records and LC records a bit of a pain.
+The library needs to retrieve book data via ISBN to save time during the cataloging process.  Fred LaPlante offers a very nice [lookup2](http://sourceforge.net/p/obiblio/patches/65/) patch that allows us to do this.  I installed this patch with the help of [xelite25](https://github.com/xelite25), a library work study student.
+
+By default, this patch uses the Library of Congress SRU server to collect data.  We found that the CUNY SRU server included more of the ELA library's books.  I switched the configuration to search the CUNY servers for copy cataloging.  It is worth noting that LC and CUNY use different schemata, and the [lookup patch only allows the use of one schema](https://bitbucket.org/mstetson/obiblio-10-wip/issues/23/lookup-must-allow-hosts-to-use-other-sru) at a time.  This makes switching between CUNY records and LC records a bit of a pain, but CUNY has proven sufficient so far.
 
 To make the lookup2 patch a bit more user-friendly, I also applied [Wolfram Sang's patch](http://sourceforge.net/p/obiblio/patches/87/) that simplifies the lookup2 interface.
 
 I had previously developed a [very small patch](https://github.com/tapinacademy/obiblio-covers) to include a cover image in catalog images.  I added this to help with identifying desired books.
 
-Finally, [xelite25](https://github.com/xelite25), a work study student at LBCC, contributed some helpful documentation.  This documentation was almost entirely missing from the original.
+Some of the language used in OpenBiblio's interface is needlessly complex (e.g. "bibliography" instead of "record"), so I simplified some of the language here.
+
+Finally, [xelite25](https://github.com/xelite25) also contributed some helpful documentation.  This documentation was almost entirely missing from the original.
 
 
 ##How to install this on a Linux server
