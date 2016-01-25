@@ -1,13 +1,10 @@
-1. Open up Mozilla Firefox browser and go to http://esol.lbcc.linnlibraries.org/
-
-2. Log In
-
-3. Click on “Catalogue” heading
-
-4. Click on “Copy Catalogue”
-
-5. Scan/manually input ISBN (back of book)
-
+<ul>
+<li>Open up Mozilla Firefox browser and go to <? echo $_SERVER['HTTP_HOST']; ?> </li>
+<li>Log in.</li>
+<li>Click on </i>Catalogue</i> heading</li>
+<li>Click on <i>Copy Catalogue</i></li>
+<li>Scan the ISBN barcode from the back of book (or type it in manually).</li>
+</ul>
 a. If record comes up, all you have to do is add Call Number (= ELA Level), and Submit
 
 b. Scan Bar Code (Done!)
@@ -30,4 +27,4 @@ a. If you have more than one book with the same title, you can click on “Add N
 
 10. Done!
 
-and scan/ manually input bar code of this book (repeat as necessary)
+
