@@ -1,4 +1,7 @@
-<h1>Contents:</h1>
+<h1>Workflows:</h1>
+<ol><li><a href="../shared/help.php?page=catalogingWorkflow">How to add books to this catalog</a></li></ol>
+
+<h2>Other information:</h2>
 <ol>
   <li>OPAC and Search Results pages</li>
     <ol type="a">
