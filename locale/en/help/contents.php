@@ -1,4 +1,4 @@
-<h1>Workflows:</h1>
+<h2>Workflows:</h2>
 <ol><li><a href="../shared/help.php?page=catalogingWorkflow">How to add books to this catalog</a></li></ol>
 
 <h2>Other information:</h2>

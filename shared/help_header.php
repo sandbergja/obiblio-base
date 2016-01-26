@@ -87,8 +87,8 @@ function popSecondaryLarge(url) {
         <?php } ?>
         <br>
         <a href="javascript:self.print();" class="alt1"><?php echo $loc->getText("helpHeaderPrint"); ?></a><br>
-        <a href="http://obiblio.sourceforge.net/index.php/Help/<?php echo HURL($_GET["page"]); ;?>" target=_blank>Revise Page</a>
-        <font class="error"><font class="small">(wiki updates to this page)</font></font><br>
+        <!--<a href="http://obiblio.sourceforge.net/index.php/Help/<?php echo HURL($_GET["page"]); ;?>" target=_blank>Revise Page</a>
+        <font class="error"><font class="small">(wiki updates to this page)</font></font><br> -->
       </font>
     </td>
     <td bgcolor="<?php echo H(OBIB_BORDER_COLOR);?>"><img src="../images/shim.gif" width="1" height="1" border="0"></td>
