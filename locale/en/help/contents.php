@@ -1,5 +1,6 @@
 <h2>Workflows:</h2>
-<ol><li><a href="../shared/help.php?page=catalogingWorkflow">How to add books to this catalog</a></li></ol>
+<ol><li><a href="../shared/help.php?page=catalogingWorkflow">How to add books to this catalog</a></li>
+<li><a href="../shared/help.php?page=inventoryWorkflow">How to take an inventory of your collection</a></li></ol>
 
 <h2>Other information:</h2>
 <ol>
