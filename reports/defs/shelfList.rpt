@@ -11,6 +11,18 @@
 .column status
 .parameters
 .	string call_no title="Call Number Starts With"
+.       select collection title="Collection"
+.               item ""
+.               sql
+                        select coll.code as value, coll.description as title from collection_dm coll
+.               end sql
+.       end select
+.       select status title="Status"
+.               item ""
+.               sql
+                        select stat.code as value, stat.description as title from biblio_status_dm stat
+.               end sql
+.       end select
 .end parameters
 
 .sql
@@ -21,5 +33,11 @@
 .	if_set barcode
 		and b.call_numbr1 ilike '%"call_no%%%'
 .	end if_set
+.       if_not_equal collection ""
+                and b.collection_cd = %collection%
+.       end if_not_equal
+.       if_not_equal status ""
+                and c.status_cd = %status%
+.       end if_not_equal
 .	order_by_expr
 .end sql
