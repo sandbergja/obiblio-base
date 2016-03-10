@@ -1,0 +1,25 @@
+.title "Shelflist (Inventory)"
+.category "Cataloging"
+.layout labels title="Labels"
+.column copyid hidden
+.column bibid hidden
+.column barcode_nmbr title="Barcode" sort=barcode_nmbr
+.column callno title="Call Num."
+.column author title=Author
+.column title func=biblio_link title=Title sort=title
+.column collection
+.column status
+.parameters
+.	string call_no title="Call Number Starts With"
+.end parameters
+
+.sql
+	select c.*, concat_ws(' ', b.call_nmbr1, b.call_nmbr2, b.call_nmbr3) callno,
+		b.title, b.author, coll.description collection, stat.description status
+	from biblio_copy c, biblio b, collection_dm coll, biblio_status_dm stat
+	where b.bibid=c.bibid and coll.code=b.collection_cd and stat.code=c.status_cd
+.	if_set barcode
+		and b.call_numbr1 ilike '%"call_no%%%'
+.	end if_set
+.	order_by_expr
+.end sql
