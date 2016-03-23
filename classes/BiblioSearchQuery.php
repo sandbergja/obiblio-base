@@ -160,7 +160,7 @@ class BiblioSearchQuery extends Query {
           if ($opacFlg) $join .= "and not (bf".$i.".tag in ('526', '856') and bf".$i.".subfield_cd = 'x') ";
           $join .= "and not bf".$i.".subfield_cd regexp('[0-9]') ";
         }
-        $criteria = $this->_getCriteria($type,array("biblio.author","biblio.responsibility_stmt","biblio.title","biblio.title_remainder","biblio.topic1","biblio.topic2","biblio.topic3","biblio.topic4","biblio.topic5"),$words,$bField=true,$drop);
+        $criteria = $this->_getCriteria($type,array("biblio.author","biblio.responsibility_stmt","biblio.title","biblio.title_remainder","biblio.topic1","biblio.topic2","biblio.topic3","biblio.topic4","biblio.topic5", "biblio.call_nmbr1","biblio.call_nmbr2","biblio.call_nmbr3"),$words,$bField=true,$drop);
       } else {
         $criteria = $this->_getCriteria($type,array("biblio.title","biblio.title_remainder"),$words);
       }
@@ -194,7 +194,7 @@ class BiblioSearchQuery extends Query {
     $limit = $this->_itemsPerPage;
     $sql .= $this->mkSQL(" limit %N, %N", $offset, $limit);
 
-    //exit("sql=[".$sql."]<br>\n");
+    // exit("sql=[".$sql."]<br>\n");
 
     # Running search sql statement
     if (!$this->_query($sql, $this->_loc->getText("biblioSearchQueryErr2"))) {
@@ -241,8 +241,10 @@ class BiblioSearchQuery extends Query {
     $like = "";
     for ($i = 0; $i < count($cols); $i++) {
       $like .= $prefix;
-      if ($type == OBIB_SEARCH_CALLNO) $like .= $this->mkSQL("%C like %Q ", $cols[$i], $word."%");
-      else $like .= $this->mkSQL("%C like %Q ", $cols[$i], "%".$word."%");
+      // Not left-anchoring call number searches anymore, because they did not work when call numbers contain spaces
+      // if ($type == OBIB_SEARCH_CALLNO) $like .= $this->mkSQL("%C like %Q ", $cols[$i], $word."%");
+      // else
+      $like .= $this->mkSQL("%C like %Q ", $cols[$i], "%".$word."%");
       $prefix = " or ";
     }
     $like .= $suffix;
